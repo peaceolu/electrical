@@ -1,0 +1,5 @@
+import { Pic } from '../ui'
+
+export function Industries(){const I=[["Construction & Engineering","board"],["Electrical Contractors","breaker"],["Manufacturing","conduit"],["Retail Electrical Stores","socket"],["Commercial Property Developers","panel"],["Industrial Facilities","flood"]];
+return <section className="bg-mist py-20 md:py-28"><div className="mx-auto max-w-7xl px-5"><h2 className="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight text-navy md:text-5xl">Industries We Serve</h2>
+<div className="mt-12 grid gap-px bg-navy/10 sm:grid-cols-2 lg:grid-cols-3">{I.map(([n,k])=><div key={n} className="group relative flex h-56 items-end overflow-hidden bg-navy p-7 text-white"><Pic src={`/images/industries/${k}.jpg`} k={k} dark c="absolute inset-0 h-full w-full opacity-70 transition-all duration-500 group-hover:scale-105 group-hover:opacity-90" fc="absolute -right-6 -top-4 h-44 opacity-25"/><div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent"/><h3 className="relative max-w-[14rem] text-2xl font-bold leading-tight">{n}</h3></div>)}</div></div></section>}
